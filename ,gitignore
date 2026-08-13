@@ -1,0 +1,5 @@
+# Archivo de credenciales
+.env
+
+# Archivos temporales de Jupyter
+.ipynb_checkpoints/

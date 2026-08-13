@@ -1,0 +1,20 @@
+nombre,partido,titular,suplente,goles,asist,posicion,gol_x_part,asist_x_part,contribucion_gol,pct_partidos_jugados,pct_titularidad
+Jorge Rodriguez,25,17,8,0,0,Port,0.0,0.0,0.0,83.3,68.0
+Javier Sanchez,27,14,13,0,0,Port,0.0,0.0,0.0,90.0,51.9
+Manuel Hermoso,25,19,6,0,0,Cent,0.0,0.0,0.0,83.3,76.0
+Martin Peiro,22,6,16,0,0,Cent,0.0,0.0,0.0,73.3,27.3
+Miguel Gutierrez,29,28,1,7,2,Cent,0.24,0.07,0.31,96.7,96.6
+Kosta Velazco,25,19,6,5,6,Lat,0.2,0.24,0.44,83.3,76.0
+Jaime Cerezo,27,24,3,4,7,Lat,0.15,0.26,0.41,90.0,88.9
+Alejandro Martinez,21,5,16,2,5,Lat,0.1,0.24,0.33,70.0,23.8
+Pablo Leon,19,14,5,1,3,Lat,0.05,0.16,0.21,63.3,73.7
+Hugo Mauro,25,11,14,1,0,Lat,0.04,0.0,0.04,83.3,44.0
+Cesar Garcia,26,21,5,3,8,Med,0.12,0.31,0.42,86.7,80.8
+Alvaro Cano,23,20,3,5,2,Med,0.22,0.09,0.3,76.7,87.0
+Mario Andres,19,2,17,0,0,Med,0.0,0.0,0.0,63.3,10.5
+Diego Baptista,30,29,1,15,21,Med,0.5,0.7,1.2,100.0,96.7
+Alvaro Ruiz,18,11,7,1,2,Med,0.06,0.11,0.17,60.0,61.1
+Alejandro Galindo,30,26,4,30,7,Del,1.0,0.23,1.23,100.0,86.7
+Carlos Born,13,3,10,2,0,Del,0.15,0.0,0.15,43.3,23.1
+Hugo Diaz,20,19,1,19,8,Del,0.95,0.4,1.35,66.7,95.0
+Sergio Velazco,26,18,8,7,5,Del,0.27,0.19,0.46,86.7,69.2
