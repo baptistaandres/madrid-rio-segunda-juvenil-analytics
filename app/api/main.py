@@ -4,7 +4,7 @@ import numpy as np
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.preprocessing import LabelEncoder
 
-from app.database import obtener_datos_jugadores
+from app.api.database import obtener_datos_jugadores
 
 app = FastAPI(
     title="Madrid Río-Segunda Juvenil Analytics API",
@@ -87,3 +87,4 @@ def predecir_atribucion(tipo_evento: str = Query("Gol", description="Tipo de eve
         "evento": evento_formateado,
         "distribucion_probabilidad": distribucion
     }
+

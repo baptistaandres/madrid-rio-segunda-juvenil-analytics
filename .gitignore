@@ -1,5 +1,16 @@
-# Archivo de credenciales
+# Archivos de entorno (Credenciales PostgreSQL / API Keys)
 .env
 
-# Archivos temporales de Jupyter
-.ipynb_checkpoints/
+# Entornos virtuales
+.venv/
+venv/
+env/
+
+# Caché de Python y Bytecode
+__pycache__/
+*.pyc
+
+# Caché de Streamlit e IDEs
+.streamlit/
+.vscode/
+.idea/
