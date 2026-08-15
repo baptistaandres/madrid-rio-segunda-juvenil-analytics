@@ -1,0 +1,82 @@
+# ⚽  Madrid Río-Segunda Juvenil — Sports Analytics
+
+> **De la escasez de datos a la toma de decisiones estratégicas:** Cómo transformar registros mínimos de un equipo juvenil en una plataforma de analítica avanzada y modelos predictivos.
+
+---
+
+## 💡 Historia y Desafío de Negocio
+
+Durante la última temporada, mi hermano **Fabián Baptista** entrenó a nuestro hermano menor, **Diego Baptista**, en la categoría Segunda Juvenil de Madrid. Ante la falta de recursos analíticos en el fútbol formativo, el proyecto abordó tres retos clave:
+
+1. **Enriquecimiento de Datos (*Data Sourcing*):** Cruzado de anotaciones manuales del cuerpo técnico con datos oficiales de la **Real Federación de Fútbol de Madrid (RFFM)**.
+2. **Ingeniería de Características (*Feature Engineering*):** Creación de métricas compuestas ($G+A/PJ$, % titularidad, percentiles) para maximizar la capacidad explicativa del dataset.
+3. **Modelado Predictivo:** Implementación de **Naive Bayes** para estimar la atribución probabilística de participación por línea posicional.
+
+---
+
+## 🏗️ Arquitectura y Tecnologías
+
+**Base de Datos:**
+- **Proyecto:** Almacenamiento Relacional de Estadísticas.
+- **Tecnologías:** PostgreSQL, SQL.
+- **Descripción:** Base de datos relacional para persistir y estructurar la tabla `jugadores_stats` asegurando la integridad de los datos.
+
+**Backend API:**
+- **Proyecto:** Servicio RESTful de Inferencia y Datos.
+- **Tecnologías:** Python, FastAPI, Uvicorn, scikit-learn.
+- **Descripción:** API que sirve las métricas del equipo y ejecuta la inferencia en tiempo real del modelo Naive Bayes para la atribución de eventos.
+
+**Frontend:**
+- **Proyecto:** Dashboard Interactivo de Decisiones.
+- **Tecnologías:** Streamlit, Plotly, pandas.
+- **Descripción:** Interfaz gráfica dividida en 4 módulos (Top 5, Matriz Titularidad vs Producción, Perfil Lollipop en Percentiles y Probabilidad de Atribución).
+
+---
+
+## 📊 Módulos del Dashboard
+
+**Bloque 1:**
+- **Proyecto:** Top 5 del Equipo.
+- **Tecnologías:** Streamlit, Plotly (Bar Charts).
+- **Descripción:** Clasificaciones de máximos generadores de valor en Goles, Asistencias y Contribución ($G+A/PJ$).
+
+**Bloque 2:**
+- **Proyecto:** Matriz Titularidad vs. Producción.
+- **Tecnologías:** Streamlit, Plotly (Scatter Plot).
+- **Descripción:** Quadrant chart que contrapone la confianza asignada (% Titularidad) con el rendimiento ofensivo respecto a la media.
+
+**Bloque 3:**
+- **Proyecto:** Perfil de Impacto Individual.
+- **Tecnologías:** Streamlit, Plotly (Lollipop Chart).
+- **Descripción:** Evaluación de un jugador frente al resto de la plantilla en formato percentil (P0 - P100).
+
+**Bloque 4:**
+- **Proyecto:** Predictor de Atribución Posicional.
+- **Tecnologías:** FastAPI, Naive Bayes, Plotly (Donut Chart).
+- **Descripción:** Estimación probabilística de la línea posicional (Defensa, Medio, Delantera) responsable de un Gol o Asistencia.
+
+---
+
+## ⚙️ Configuración y Ejecución
+
+**Entorno:**
+- **Proyecto:** Setup del Proyecto.
+- **Tecnologías:** Python, venv, pip.
+- **Descripción:** Clonar repo, crear entorno virtual e instalar dependencias con `pip install -r requirements.txt`.
+
+**Variables:**
+- **Proyecto:** Configuración de Entorno.
+- **Tecnologías:** .env, python-dotenv.
+- **Descripción:** Crear archivo `.env` basándose en `.env.example` con las credenciales de PostgreSQL y la URL de la API.
+
+**Servicios:**
+- **Proyecto:** Despliegue Local.
+- **Tecnologías:** Uvicorn, Streamlit.
+- **Descripción:** Ejecutar API (`uvicorn app.api.main:app --reload`) y Dashboard (`streamlit run app/frontend/app.py`).
+
+---
+
+## 🤝 Créditos
+
+- **Fabián Baptista:** Entrenador (Toma de datos primaria y validación táctica).
+- **Diego Baptista:** Jugador y plantilla del Madrid Río Segunda Juvenil.
